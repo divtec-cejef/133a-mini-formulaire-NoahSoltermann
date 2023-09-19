@@ -32,8 +32,25 @@
             </select>
         </li>
         <li>
+            <fieldset>
+                <legende>Genre</legende>
+                <label>
+                    <input type="radio" name="genre" value="f" />
+                    <span>Femme</span>
+                </label>
+                <label>
+                    <input type="radio" name="genre" value="h" />
+                    <span>Homme</span>
+                </label>
+                <label>
+                    <input type="radio" name="genre" value="n" />
+                    <span>Ne se prononce pas.</span>
+                </label>
+            </fieldset>
+        </li>
+        <li>
             <label for="email">E-mail</label>
-            <input name ="email" id="email" type="email">
+            <input name ="email" id="email" type="email" autofocus required>
         </li>
         <li>
             <label for="motPasse">Mot de passe</label>
@@ -42,6 +59,12 @@
         <li>
             <label for="confirmationMotPasse">Confirmer le mot de passe</label>
             <input type="password" id="confirmationMotPasse" name="confirmationMotPasse">
+        </li>
+        <li>
+            <label>
+                <input type="radio" name="connect" />
+                <span>Rester connecté</span>
+            </label>
         </li>
         <li>
             <button>Créer un compte</button>

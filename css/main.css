@@ -74,11 +74,34 @@ label {
     cursor: pointer;
 }
 
-input {
+input, select {
     border: 2px solid #2b2d42;
     padding: .5em;
     width: 100%;
+    /*Hérite le style de police du body (ne le fait pas automatiquement)*/
     font-family: inherit;
     font-size: inherit;
     color: inherit;
+}
+
+/* Radio et checkbox*/
+label input {
+    display: inline;
+    width: auto;
+}
+
+fieldset legend {
+    font-weight: bold;
+    margin: 0 .5em;
+}
+
+fieldset label {
+    margin: 1em 0;
+    font-weight: normal;
+}
+
+fieldset label input:checked + span,
+fieldset label:hover > span
+{
+    font-weight: bold;
 }
